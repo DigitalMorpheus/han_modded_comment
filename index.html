@@ -5,6 +5,7 @@
 <meta charset="UTF-8"> 
 <title>PS3Xploit Tools v3.1 - PS3 Modded Comment Injetor</title>
 <script>
+var friendNumber = prompt("Please enter user number", "");
 function initROP(init)
 {
 	try
@@ -29,7 +30,6 @@ function initROP(init)
 		total_loops++;
 		
 		// Overwrite filename and destination path here 
-		var friendNumber = prompt("Please enter user number", "");
 		template_1_file_usb='/mecomment.dat';
 		template_1_file_blind='/dev_hdd0/home/'+friendNumber+'/friendim/mecomment.dat';
 		
